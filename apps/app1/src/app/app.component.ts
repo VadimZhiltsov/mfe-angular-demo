@@ -3,7 +3,9 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { assetUrl } from 'src/single-spa/asset-url';
 
-interface IAppState {}
+interface IAppState {
+  value: number
+}
 
 @Component({
   selector: 'app1-root',
@@ -14,10 +16,12 @@ export class AppComponent {
   title = 'app1';
   yoshiUrl = assetUrl("yoshi.png");
 
-  @select() value$: Observable<number>;
+  @select((state : IAppState )=> { 
+    return state.value
+  }) value$: Observable<number>;
 
   constructor(private ngRedux: NgRedux<IAppState>) {}
-
+  
   onClick() {
     this.ngRedux.dispatch({ type: 'INC' });
   }

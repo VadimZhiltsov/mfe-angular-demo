@@ -7,10 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
 
-/* tslint:disable */
-import  store from 'redux-store'; 
-/* tslint:enable */
-
+import store from 'my-redux-store'; 
 interface IAppState {
   /* ... */
 }

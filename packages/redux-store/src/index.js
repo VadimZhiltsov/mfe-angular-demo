@@ -5,7 +5,7 @@ const {
 
 const { createLogger } = require ('redux-logger');
 
-const store;
+let store;
 
 if (!window._myReduxStore) {
   const initialState = {
@@ -21,10 +21,12 @@ if (!window._myReduxStore) {
         return {
           value: state.value - 1
         }
+      default: 
+        return initialState;
     }
   }
 
-  const store = new createStore(
+  store = new createStore(
     rootReducer,
     applyMiddleware(createLogger()),
   );

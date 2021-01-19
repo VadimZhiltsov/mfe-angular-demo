@@ -10,5 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "serve": "^11.1.0"
+  },
+  "dependencies": {
+    "my-redux-store": "^0.0.1"
   }
 }
