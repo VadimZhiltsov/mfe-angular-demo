@@ -1,4 +1,9 @@
+To start app excecute commands:
 ```
+$ npm i
 $ npx lerna bootstrap
-$ npx lerna run start --stream --parallel
+$ npm run start
 ```
+Wait until everything booted. 
+And go http://localhost:4200
+
