@@ -7,12 +7,13 @@
     <title>Your application</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="importmap-type" content="systemjs-importmap">
-    <script type="systemjs-importmap">
+    <script type="overridable-importmap">
       {
         "imports": {
           "app1": "http://localhost:4201/main.js",
           "app2": "http://localhost:4202/main.js",
           "navbar": "http://localhost:4300/main.js",
+          "my-redux-store": "http://localhost:4400/bundle.js",
           "single-spa": "https://cdnjs.cloudflare.com/ajax/libs/single-spa/5.5.0/system/single-spa.min.js",
           "single-spa-layout": "https://unpkg.com/single-spa-layout@1.0.0-beta.2/dist/system/single-spa-layout.min.js"
         }
@@ -22,6 +23,7 @@
     <script src='https://unpkg.com/core-js-bundle@3.1.4/minified.js'></script>
     <script src="https://unpkg.com/zone.js@0.10.3/dist/zone.js"></script>
     <script src="https://unpkg.com/import-map-overrides@1.15.1/dist/import-map-overrides.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.0.0/system.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.0.0/extras/amd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/4.0.0/extras/named-exports.js"></script>

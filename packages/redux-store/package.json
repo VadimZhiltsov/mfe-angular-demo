@@ -1,0 +1,21 @@
+{
+  "name": "my-redux-store",
+  "version": "1.0.0",
+  "description": "The single-spa root config for coexisting-angular-microfrontends",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve"
+  },
+  "author": "Joel Denning",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^11.1.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "redux": "4.0.1",
+    "redux-logger": "^3.0.6",
+    "webpack": "^5.15.0",
+    "webpack-cli": "^4.3.1"
+  }
+}
