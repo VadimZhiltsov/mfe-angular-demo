@@ -1,6 +1,6 @@
 {
   "name": "root-html-file",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "The single-spa root config for coexisting-angular-microfrontends",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,5 @@
   "license": "MIT",
   "devDependencies": {
     "serve": "^11.1.0"
-  },
-  "dependencies": {}
+  }
 }
