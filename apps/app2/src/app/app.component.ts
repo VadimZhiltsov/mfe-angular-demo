@@ -24,5 +24,7 @@ export class AppComponent {
   
   onClick() {
     this.ngRedux.dispatch({ type: 'INC' });
+
+    this.ngRedux.dispatch({ type: 'QWERTY' });
   }
 }

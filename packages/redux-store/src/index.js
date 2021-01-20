@@ -21,6 +21,10 @@ if (!window._myReduxStore) {
         return {
           value: state.value - 1
         }
+      case "QWERTY":
+          return {
+            value: state.value - 1
+          }
       default: 
         return initialState;
     }
